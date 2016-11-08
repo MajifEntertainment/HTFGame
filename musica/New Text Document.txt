@@ -1,0 +1,5 @@
+def musica():
+    pygame.mixer.music.load("musica/Happy tree friends 8-bit remix.mp3") #sound file has to be in same folder/directory as
+    #the file you are writing the music loading code into
+    pygame.mixer.music.play(-1,0.0)
+    return
