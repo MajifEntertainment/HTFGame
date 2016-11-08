@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="26" height="122" tilewidth="32" tileheight="32" nextobjectid="160">
+ <tileset firstgid="1" name="Jungle_terrain" tilewidth="32" tileheight="32" tilecount="420" columns="28">
+  <image source="Jungle_terrain.png" width="896" height="480"/>
+ </tileset>
+ <tileset firstgid="421" name="objects" tilewidth="32" tileheight="32" tilecount="91" columns="13">
+  <image source="objects.PNG" width="416" height="224"/>
+ </tileset>
+ <tileset firstgid="512" name="triggers" tilewidth="32" tileheight="32" tilecount="6" columns="6">
+  <image source="triggers.png" width="192" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="player" value="yes"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="enemy" value="yes"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="exit" value="yes"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="reverse" value="yes"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="back" width="26" height="122">
+  <data encoding="base64" compression="zlib">
+   eJzt2NENgkAQRdGlEmtSxC4UsQtQKEcLkMJ8RQDB5Jzk/s58TnZLAQAAAGAPjlUpp1Snc2rSpVp+zzUzb6lN99Slxwp7+swc0jO90pimFfYA8N/euQ2fDe7DNztmdwgAAICdO3i7bsafPACwhB/vfxLr
+  </data>
+ </layer>
+ <layer name="map" width="26" height="122">
+  <data encoding="base64" compression="zlib">
+   eJztWstuVDEMzbQ8FlCoxKogOkAXPCXYQEULywI/AKjLKfwAsC4L9lCpez4AIfEB7IEFC8TjByilapEo/AAPWzNWLY+T2DeZKQKOdNRqbm58HTtO7KTdCuFzGCwnQca+YMcEtD/Y46GW/b0x4CmHnPPQ94Uepx1yTgKvOOTcAj7o8bbjvTnggqHdMvAJ8D2T8wH4tPcsh06w2Qf7egF8KfjKKMdinz3AvcAdYI+dwI3Q5S74f3dr63kKKfvQ+8eBJxJ90POUvJR9cv172pN9PonfLwJnGnJW9PUxdO3zFfhLPLsOvNGQN0VfP4CbwDbYck082x+2/NfLcdHXaujGHc0+pwvknFH6i82fqwVyrin9afMHY2XpuMkYq80fjJXfC+R8C/0xVps/68BjreZypuDdL6LPmH1q+hsiFt9q+xvZR8aDmv6G8QDto8WDmuOWigc1x43igWaf2vM0tv7U9oPY+oNzaKMh5dxBWPcHpfDu35rCu39rCuv+DeeanMup3yXIPisZ4lzDubwsSL/n3qf9wc8MN3t6Szkdx/ttY14iYwZi1fAe5SUW+5TCO3/Q7jTmFvsTvPMH7U5jLmN8Ct75w+2h2SuG3PzB7cQIcNTRp4acfQ4DJ4HtQjk5+9A4ecZIw58W30pB9qGagKSnRpACxTeqCUhOV5KF9kmt9bRXLpU1l5HDZeE4Xg79eSGC8kztGaJjkEOycBznQ39eiKA8U3uGWAzddaF0P7OeeIb4V/chpUA/uD8EOegH27EfvQO86+Q90Sfm6xNsvmEbtA/3g4fAR04uCTm8tjnfa0P7Mq6fNk/53mtS5OJy3GM5DfeDWLzDsaX6mmwj519MDv+emD7Yhuprso1VH/49g9SH+8Eg9eF+MEh9uB/U0CdWe+DtmurD9xQWP2iiD62BxFhNjftBE32mMuuklv/UsI8GuS7U8DcNcl2I5YFrTB/ZxrL3Hvb+YKUSY7kk1flyebmVsVzSuk/UqNUDYrZazPT1PPEstx/j50F8Ljx2ylwIafDzoFy+kBqv2Bhp51qWfEHSowdB+oFmDxrPnB4pvXJ+4NEjpddYKKtX5fQgDCJf0OwzyHyB6zXIfIHr5c0XqK7EiTWmZ5n3vOsC1ZU42wY5Xj/Q1nVLvdjrB1qcstZ7PX5gre+W3kNpiv/1g2YoiQdYo4rVpyRK6gdYo4rVpyQsfhD77iPgq0dbtrYWP4h99yWsQ7RsbS1+oH23t63FD7Tv9rYdZh2J4qDnnMUL9APch4wARyvVxDWgHwwjvnWGJGe76okatBoj1hD5OWqsHfFtyMcDrca4pMjJ1SJz8WBG2RfPKr6ptePr9t9cVy4Bvysrz8K8+wPyKVmzRvB6srwvG1sXYudG5FOyZo2g+h7Wr+jOJyG2LsTOjVLnqVTfo3s1r9mzmB/kzo04yC6kz7iQgSA/yNVnUiC7UB3xjJCDdwnQD/g+vMkaRLrT3Tx574nf42py1i9Bd6Zj9zprxQOyj3a/qmY8IH+z3utsCrrLpt1PrJkvpOZCzXzhjfjLgfHgXejP1XnOfkBQy+1zxPVU5ukyZz8LPNf7i9Ryewt/A+fLqnA=
+  </data>
+ </layer>
+ <layer name="front" width="26" height="122">
+  <data encoding="base64" compression="zlib">
+   eJzt2MkNwkAMBdBJlQFSRljKYOslFACF4cP4hHLLBJDek77mZh89+qUAAAAA8Av6rpRNzTayiwzd8nvGmLmvOUSOkVODPeeYeam5Rm6Re4M9APyvKe7CY4Xb8IwdLzcIAPiC/O/MvUvJ/87cCwB8yk4++/jWnXz28a07+ezjdfIAsI43a1MfcQ==
+  </data>
+ </layer>
+ <objectgroup color="#ff0000" name="triggers" visible="0">
+  <object id="1" x="0" y="3872" width="254" height="38">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="2" x="386" y="3872" width="446" height="43">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="3" x="254" y="3874" width="132" height="39">
+   <properties>
+    <property name="death" value="yes"/>
+   </properties>
+  </object>
+  <object id="5" gid="512" x="61" y="3849" width="32" height="32"/>
+  <object id="7" x="0" y="-5" width="31" height="3880">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="9" x="799" y="3" width="31" height="3872">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="10" x="768" y="3615" width="33" height="63">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="11" x="576" y="3520" width="95" height="288">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="14" x="576" y="3456" width="158" height="33">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="15" x="577" y="3491" width="147" height="8">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="16" x="576" y="3501" width="131" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="17" x="577" y="3507" width="114" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="18" x="575" y="3513" width="105" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="20" x="352" y="3488" width="94" height="64">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="21" x="160" y="3520" width="94" height="63">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="22" x="29" y="3104" width="66" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="23" x="25" y="3136" width="69" height="3">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="24" x="28" y="3139" width="62" height="2">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="25" x="28" y="3141" width="59" height="3">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="26" x="24" y="3144" width="59" height="2">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="28" x="25" y="3146" width="53" height="3">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="29" x="26" y="3149" width="46" height="3">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="31" x="27" y="3152" width="38" height="2">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="32" x="22" y="3154" width="36" height="2">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="33" x="25" y="3156" width="29" height="3">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="34" x="25" y="3159" width="22" height="5">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="35" x="23" y="3164" width="17" height="4">
+   <properties>
+    <property name="blocker" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="36" x="255" y="3296" width="547" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="39" x="257" y="3328" width="190" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="40" x="263" y="3335" width="179" height="5">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="41" x="269" y="3341" width="166" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="42" x="276" y="3348" width="151" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="43" x="283" y="3355" width="139" height="5">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="44" x="578" y="3329" width="226" height="9">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="45" x="588" y="3339" width="213" height="8">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="47" x="596" y="3348" width="214" height="5">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="48" x="602" y="3354" width="209" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="50" x="724" y="3489" width="10" height="3">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="51" x="724" y="3492" width="6" height="3">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="52" gid="515" x="227" y="3297" width="32" height="32"/>
+  <object id="53" gid="515" x="799" y="3299" width="32" height="32"/>
+  <object id="54" gid="513" x="758" y="3296" width="32" height="32"/>
+  <object id="55" x="256" y="2976" width="64" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="56" x="257" y="3008" width="62" height="7">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="58" x="260" y="3016" width="56" height="7">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="59" x="262" y="3023" width="51" height="4">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="60" x="266" y="3027" width="43" height="7">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="61" x="269" y="3035" width="37" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="62" x="271" y="3042" width="33" height="9">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="63" x="277" y="3052" width="21" height="12">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="64" x="281" y="3065" width="13" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="65" x="473" y="3001" width="13" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="66" x="449" y="2944" width="62" height="7">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="67" x="458" y="2963" width="43" height="7">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="68" x="448" y="2912" width="64" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="69" x="452" y="2952" width="56" height="7">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="70" x="454" y="2959" width="51" height="4">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="71" x="463" y="2978" width="33" height="9">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="72" x="461" y="2971" width="37" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="73" x="469" y="2988" width="21" height="12">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="74" x="633" y="3065" width="13" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="75" x="609" y="3008" width="62" height="7">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="76" x="618" y="3027" width="43" height="7">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="77" x="608" y="2976" width="64" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="78" x="612" y="3016" width="56" height="7">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="79" x="614" y="3023" width="51" height="4">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="80" x="623" y="3042" width="33" height="9">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="81" x="621" y="3035" width="37" height="6">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="82" x="629" y="3052" width="21" height="12">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="83" x="354" y="2624" width="190" height="130">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="85" x="538" y="2689" width="275" height="63">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="86" x="547" y="2625" width="252" height="63">
+   <properties>
+    <property name="death" value="yes"/>
+   </properties>
+  </object>
+  <object id="87" x="726" y="2555" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="88" x="661" y="2491" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="89" x="725" y="2427" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="90" x="661" y="2363" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="91" x="725" y="2299" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="92" x="13" y="3615" width="113" height="63">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="93" gid="513" x="268" y="3296" width="32" height="32"/>
+  <object id="94" gid="515" x="515" y="3295" width="32" height="32"/>
+  <object id="95" x="17" y="2209" width="622" height="63">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="96" x="17" y="2272" width="463" height="96">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="97" x="21" y="2369" width="394" height="63">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="98" x="11" y="2431" width="340" height="64">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="99" x="95" y="1697" width="224" height="442">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="100" x="94" y="1698" width="448" height="60">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="101" x="386" y="1701" width="156" height="443">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="102" x="544" y="1985" width="257" height="62">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="103" x="641" y="1695" width="163" height="294">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="105" x="543" y="1920" width="99" height="66">
+   <properties>
+    <property name="death" value="yes"/>
+   </properties>
+  </object>
+  <object id="106" x="342" y="2107" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="107" x="341" y="2043" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="108" x="341" y="1979" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="109" x="341" y="1914" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="110" x="341" y="1851" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="111" x="341" y="1787" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="113" x="1" y="1" width="831" height="29">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="115" x="4" y="1440" width="634" height="31">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="116" x="8" y="1470" width="630" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="117" x="0" y="1407" width="319" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="118" x="6" y="1376" width="281" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="119" x="-8" y="1344" width="263" height="34">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="120" gid="515" x="636" y="1442" width="32" height="32"/>
+  <object id="121" gid="515" x="291" y="1441" width="32" height="32"/>
+  <object id="122" gid="513" x="474" y="1439" width="32" height="32"/>
+  <object id="123" x="225" y="1184" width="95" height="64">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="124" x="353" y="1089" width="127" height="64">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="125" x="1" y="961" width="351" height="63">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="126" x="482" y="960" width="324" height="63">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="127" x="481" y="929" width="62" height="31">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="129" x="289" y="929" width="62" height="31">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="130" gid="515" x="1" y="962" width="32" height="32"/>
+  <object id="131" gid="515" x="288" y="963" width="32" height="32"/>
+  <object id="132" gid="515" x="515" y="962" width="32" height="32"/>
+  <object id="133" gid="515" x="797" y="963" width="32" height="32"/>
+  <object id="134" gid="513" x="253" y="962" width="32" height="32"/>
+  <object id="137" gid="513" x="765" y="958" width="32" height="32"/>
+  <object id="138" gid="513" x="35" y="961" width="32" height="32"/>
+  <object id="139" gid="513" x="545" y="960" width="32" height="32"/>
+  <object id="140" x="161" y="321" width="510" height="477">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="141" x="17" y="322" width="46" height="62">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="142" x="129" y="481" width="46" height="62">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="143" x="17" y="641" width="46" height="62">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="144" x="770" y="642" width="46" height="62">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="145" x="657" y="482" width="46" height="62">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="146" x="771" y="321" width="46" height="62">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="147" x="321" y="160" width="190" height="32">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="148" x="321" y="192" width="190" height="5">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="149" x="330" y="198" width="173" height="5">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="150" x="344" y="203" width="144" height="7">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="151" x="359" y="211" width="116" height="3">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="152" x="367" y="214" width="100" height="4">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="153" x="376" y="219" width="80" height="5">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="154" x="597" y="251" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="155" x="533" y="218" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="156" x="277" y="220" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="157" x="213" y="251" width="21" height="17">
+   <properties>
+    <property name="blockers" value="t"/>
+   </properties>
+  </object>
+  <object id="158" gid="514" x="399" y="159" width="32" height="32"/>
+  <object id="159" x="513" y="3586" width="64" height="60">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
