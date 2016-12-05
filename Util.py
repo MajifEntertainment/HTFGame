@@ -20,7 +20,12 @@ def text_objects(text, font,color):
     return textSurface, textSurface.get_rect()
 #despliega la palabras creadas por text_objects
 def text(screen,txt,color,posX,posY,size):
-    largeText = pygame.font.Font('freesansbold.ttf', size)
+    largeText = pygame.font.Font('happytreefriends.ttf', size)
     TextSurf, TextRect =text_objects(txt, largeText,color)
     TextRect.center = (posX, posY)
     screen.blit(TextSurf, TextRect)
+def musica():
+    pygame.mixer.music.load("music/Happy tree friends 8-bit remix.mp3")
+    #pygame.mixer.music.play(-1, 0.0)
+    return
+

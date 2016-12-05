@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="45" height="30" tilewidth="32" tileheight="32" nextobjectid="228">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="45" height="30" tilewidth="32" tileheight="32" nextobjectid="232">
  <tileset firstgid="1" name="Jungle_terrain" tilewidth="32" tileheight="32" tilecount="420" columns="28">
   <image source="Jungle_terrain.png" width="896" height="480"/>
  </tileset>
@@ -7,12 +7,35 @@
   <image source="triggers.png" width="192" height="32"/>
   <tile id="0">
    <properties>
-    <property name="player" type="bool" value="true"/>
+    <property name="player" value="yes"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="enemy" value="yes"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="exit" value="yes"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="reverse" value="yes"/>
    </properties>
   </tile>
  </tileset>
  <tileset firstgid="427" name="objects" tilewidth="32" tileheight="32" tilecount="91" columns="13">
   <image source="objects.PNG" width="416" height="224"/>
+ </tileset>
+ <tileset firstgid="518" name="triggers2" tilewidth="32" tileheight="32" tilecount="6" columns="6">
+  <image source="triggers2.png" width="192" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="boss" type="bool" value="true"/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="atras" width="45" height="30">
   <data encoding="base64" compression="zlib">
@@ -21,7 +44,7 @@
  </layer>
  <layer name="mapa" width="45" height="30">
   <data encoding="base64" compression="zlib">
-   eJztmD1OAzEQhW1SgcTPBUj4qeAGQICKQE8CdXIDoIaCHiLlIFxgj5AKzgAIcQpmtB5kVp6x14ypeNJXrLDfvDgeO0vPGvNmdNgCr3sTZlupThd8JkZPq0xeZE2pxhi4U/JCnRo+85lSjVtgRckLdWTD+wP3xbHVqbEM7OpYfevD/MyNeT8V/XeAgaIfacPLvKm0vqQTo9uDpL7bI7jGh8qZtXvQF6619hqjtHvQV7/AGqNSe7BqPM+APWDfcZBYL2dOUyk9WHmQMPMIuHBcJtaT5jRrcErpQS5zztkgzQnVCYnrwcrIHpg552yIzWnWDdX2ezA0Hm0XgA6TO+dskOb49bjc1IOhv+HzOtAFekzmnLNBmuPXC60hQj3IfQ+vpv79994uVrakepSx1D1YUiXvwVIqeQ+Wkn8Pzh3n0B9DYGTr5zaaJ/AbHxT1YEcYR+dPDMlDywc9sAcXbX22cOPo/IkheWj5oMeSu0sHwjj8XNw7no/k0cZnIniM3Zierc9DbhydmTEkDy0f9MD/FWi/D5ZWqffBkvq/B/9GeA++ADeG3/dXwHUC6PEk0MZnxoAez8AjMBUyP7gxMaaRzG18uMzk8QVFFhcc
+   eJzVlz1OAzEQhb2kAomfC5DwIyHBDYBAKgI9BOrkBkANBT1EykG4QI6QCm6A+BHiDgjmaW1kVp5Z72aMxJO+YhP7zYvl8catzJhXo8Maed2YMOtKdZrkMzB6WmTygiWlGn3iWskLOjR85iOlGlfEgpIXtJ+F9wf2RSfTqTFPbOlY/ejd/M6NvB+K/ptEV9HPacXLvKq0vk4HRrcHndp2j2CN95Qza/egL6y19hpD2j3oq51gjaHYHhwXnkfENrFj2Y2sV2dOUTE9OPZwQuYecWo5i6wnzSnW4BTTg1zmOmeDNCdUJySuB8dG9kDmOmdD2Zxi3VBtvwdD42E7QzSY3HXOBmmOX4/L7Xow9B2el4km0WIy1zkbpDl+vdAaAteDz4HM0IvJ//+9VYtVW1I9lxk9uEG/+euPMk2rJ5P3IPrhr9ZxWn0SHZPuPZhC2Du4p7j34MRyTJ+dEL0sf66iSQTT+ECuBxvCOHf+lCF5aPnAAz04m+VnCzfOnT9lSB5aPvCYs+/SrjAOv4u74/lIHlV8BoJH345p2XODG+fOzDIkDy2fYg/+F6W6D6ZUqvtgSqW8D6YS/os+EpeG3/fnxEUE8LgXqOIzYoDHA3FHDIXMt3ZMGcOSzFV8uMzO4xtGJxsq
   </data>
  </layer>
  <layer name="delante" width="45" height="30">
@@ -29,7 +52,7 @@
    eJztzUsKgCAYRWFdYs9dVNYuKmvN3YGBIxETmpwPDv6jqzEAAAAAgBoaa0yrOtWrIXpHW7bx+rKT2ph0z2oJudCqtsy/4g1XaSe1ses+1BnyoUvdmX/FG77STukGAOAfDzU+H6g=
   </data>
  </layer>
- <objectgroup color="#ff0000" name="triggers">
+ <objectgroup color="#ff0000" name="triggers" visible="0">
   <object id="23" x="258" y="931" width="350" height="40">
    <properties>
     <property name="blockers" value="tlrb"/>
@@ -380,8 +403,20 @@
     <property name="blockers" value="tlrb"/>
    </properties>
   </object>
-  <object id="226" gid="421" x="113" y="657" width="32" height="32"/>
+  <object id="226" gid="421" x="98" y="610" width="32" height="32"/>
   <object id="227" x="21" y="670" width="40" height="96">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="228" gid="518" x="1280" y="607" width="32" height="32"/>
+  <object id="229" gid="424" x="1363" y="670" width="32" height="32"/>
+  <object id="230" x="-31" y="510" width="94" height="64">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="231" x="1377" y="544" width="94" height="64">
    <properties>
     <property name="blockers" value="tlrb"/>
    </properties>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="90" height="30" tilewidth="32" tileheight="32" nextobjectid="17">
+ <tileset firstgid="1" name="new" tilewidth="32" tileheight="32" tilecount="20" columns="5">
+  <image source="new.png" trans="ffffff" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="21" name="apple" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="apple.png" trans="ffffff" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="22" name="triggers" tilewidth="32" tileheight="32" tilecount="6" columns="6">
+  <image source="triggers.png" width="192" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="player" value="yes"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="enemy" value="yes"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="exit" value="yes"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="reverse" value="yes"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="28" name="triggers2" tilewidth="32" tileheight="32" tilecount="6" columns="6">
+  <image source="triggers2.png" width="192" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="boss" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Capa de Patrones 1" width="90" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1jEKgDAMBdBqQR1cvf9VzSiCHXRQ0/fg01JSUjK1FAAAAMhne/sBwG1jpB7WmqwfAP2aInNkaez/fA/ga4ZGetOaRY/zAMji6s9+PlPzrGYVSZQdtNsMDw==
+  </data>
+ </layer>
+ <objectgroup name="triggers" visible="0">
+  <object id="1" x="1" y="869" width="2879" height="87">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="2" x="2368" y="704" width="254" height="29">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="3" x="225" y="704" width="222" height="29">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="4" x="544" y="576" width="286" height="29">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="5" x="994" y="576" width="286" height="29">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="6" x="1442" y="576" width="286" height="29">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="7" x="1889" y="575" width="286" height="29">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="8" x="1728" y="434" width="159" height="13">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="9" x="831" y="434" width="159" height="13">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="10" x="-12" y="-3" width="15" height="886">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="11" x="2880" y="-17" width="15" height="886">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="12" x="1" y="-18" width="2895" height="17">
+   <properties>
+    <property name="blockers" value="tlrb"/>
+   </properties>
+  </object>
+  <object id="13" x="1793" y="325" width="27" height="22">
+   <properties>
+    <property name="death" value="yes"/>
+   </properties>
+  </object>
+  <object id="14" gid="22" x="129" y="764" width="32" height="32"/>
+  <object id="15" gid="28" x="2722" y="766" width="32" height="32"/>
+  <object id="16" gid="25" x="2877" y="862" width="32" height="32"/>
+ </objectgroup>
+</map>
